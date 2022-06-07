@@ -1,0 +1,46 @@
+.article-container{
+    padding: 25px 15%;
+}
+.article-title{
+    font-size: 30px;
+}
+.article-category{
+    font-size: 20px;
+    opacity: 0.7;
+}
+.article-body p {
+    padding: 5%;
+    text-align: justify;
+}
+.article-infos span {
+    font-weight: 600;
+    font-style: italic;
+    color: #FF9425
+}
+.list-com{
+    height: 0px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s
+}
+.comment-author{
+    font-weight: 700;
+    opacity: 0.7;
+}
+.comm-text{
+    text-align: justify;
+}
+.date-create{
+    font-size: 12px;
+    font-style: italic;
+}
+.article-commentaires h3{
+    transition: 0.5s
+}
+.article-commentaires h3:hover{
+    color: #FF9425;
+    cursor: pointer;
+    transition: 0.5s
+}

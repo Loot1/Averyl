@@ -1,0 +1,49 @@
+.main-container{
+    text-transform: uppercase ;
+    padding: 60px 20%;
+}
+.main-container h1{
+    font-size: 30px;
+    text-align: center;
+    color: #FF9425;
+}
+.main-container h4{
+    opacity: 0.7;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+.uk-input{
+    width: 100%;    
+    margin:25px 0px;
+}
+.form-support{
+	margin-bottom: 50px;
+}
+.ticketEndForm div{
+    margin: 15px;
+}
+#ticketSelectCategorie{
+    font-weight: 500
+}
+.img-container{
+    width: 100px;
+    margin: auto
+}
+.img-container img{
+    width: 100px;
+}
+
+.uk-textarea{
+ max-width: 100%;   
+ min-width: 100%;
+
+}
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+@media  (max-width: 1100px) {
+    .form-support{
+        margin: 0;
+    }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Averyl est un projet minecraft Semi-RP en 1.12.2 unique en son genre. Rejoignez nous !"/>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<title>Averyl - CGU</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/menuMobile.css"/>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+	<header class="mobile">
+		<div class="contain-flex">
+			<div class="position-mobile">
+				<div class="logo-container">
+					<img src="img/logos/logo.png" alt="">
+				</div>
+			</div>
+			<div class="containt-menu-icon">
+				<button style="outline: none;"class="hamburger hamburger--collapse" type="button">
+					<span class="hamburger-box ">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>  
+			</div>
+		</div>
+		<div class="menu-contain">
+			<aside>
+				<nav>
+					<ul>
+						<li class="fisrt-Child jolie-back accueil">
+							<span>
+								<a href="/">ACCUEIL</a>
+							</span>
+						</li>
+						<li class="fisrt-Child">
+							<span>
+								<a href="https://averyl.tebex.io/">BOUTIQUE</a>
+							</span>
+						</li >
+						<li class="fisrt-Child reglement dynmap">
+							<span>SEMI-RP</span>
+							<ul>
+								<li class="jolie-back">
+									<a href="rules.html">Règlement</a>
+								</li>
+							</ul>
+						</li>
+						<li class="fisrt-Child jolie-back staff">
+							<span>
+								<a href="staff.html">ÉQUIPE</a>
+							</span>
+						</li>
+						<li class="fisrt-Child jolie-back support">
+							<span>
+								<a href="support.html">SUPPORT</a>
+							</span>
+						</li>
+						<li class="fisrt-Child jolie-back">
+							<div class="connexion-container">
+								<span>CONNEXION</span>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		</div>
+	</header>
+	
+	<header class="desktop">
+		<div class="nav-container">
+			<div class="logo-container">
+				<img src="img/logos/logo.png" alt="">
+			</div>
+			<nav>
+				<ul>
+					<li class="accueil">
+						<a href="/">ACCUEIL</a>
+					</li>
+					<li class="first-Li">
+						<div class="name">
+							<a href="/">BOUTIQUE</a>
+						</div>
+					</li>
+					<li class="first-Li reglement dynmap">
+						<div class="name">SEMI-RP</div>
+						<div class="options">
+							<ul>
+								<li >
+									<a href="rules.html">Règlement</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="staff">
+						<a href="staff.html">ÉQUIPE</a>
+					</li>
+					<li class="support">
+						<a href="support.html">SUPPORT</a>
+					</li>
+				</ul>
+				<script>
+					var path = location.pathname.replace(/\//gi,'')
+					if (path == "") {
+						path = "accueil"
+					}
+					$('.'+path).addClass('active-link');
+				</script>
+			</nav>
+		</div>
+		<div class="connexion-container">
+			<span>CONNEXION/INSCRIPTION</span>
+		</div>
+	</header>
+	
+	<script>
+		$('.hamburger').click(function(){
+			$(this).toggleClass('is-active')
+			$('.menu-contain').toggleClass("open-menuMobile")
+			if ($(this).css('position') == "static" || $(this).css('position') == "relative") {
+				$(this).css('position',"fixed")
+				$(this).css('top','25px')
+				$(this).css('left','0')
+				$('body').css("overflow",'hidden')
+			} else {
+				$(this).css('position',"relative")
+				$(this).css('top','0')		
+				$('body').css("overflow",'visible')	
+			}
+		})
+		$('.first-Li').mouseenter(function(){
+			$('.options').css('visibility', 'hidden')
+				$(this).children('.options').css('visibility', 'visible')
+		})
+		$('.options').mouseleave(function(){
+			$('.options').css('visibility', 'hidden')
+		})
+		$('.options').mouseleave(function(){
+			$('.options').css('visibility', 'hidden')
+		})
+	</script>
+
+<div class="main-container">
+	<form method="POST" action="forgot.php">
+		<h3>Récuperation de compte :</h3>
+		<div>
+			<input class="uk-input uk-margin uk-form-width-large" type="email" placeholder="Email" name="mail" required>
+		</div><br>
+		<!-- <center> -->
+		<button type="submit" class="uk-button uk-button-primary">Récuperer mon compte</button>
+		<!-- </center> -->
+	</form>
+</div>
+
+<style>
+	footer {
+		margin: 0 !important
+	}
+
+	.main-container {
+		padding: 10%;
+		/*background: rgba(0,0,0,0.5);*/
+		text-align: center
+	}
+
+	.main-container form {
+		-webkit-box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.17);
+		-moz-box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.17);
+		box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.17);
+		padding: 5%;
+		background: white;
+	}
+</style>
+
+
+  <div id="login" class="login-close">
+    <form>
+      <h3>Connexion</h3>
+      <div>
+        <input class="uk-input" type="text" placeholder="Nom d'utilisateur" name="login" maxlength="100" required>
+      </div>
+      <div>
+        <input class="uk-input" type="password" placeholder="Mot de passe" name="pass" maxlength="100" required>
+      </div>
+      <div class="buttonlist">
+        <button type="submit" name="NavConnexion" class="uk-button uk-button-primary">Se connecter</button>
+        <a class="uk-button uk-button-default" href="/">S'enregistrer</a>
+        <a class="uk-button uk-button-default" href="forgot.html">Mot de passe oublié</a>
+      </div>
+    </form>
+  </div>
+
+<script>
+	$(".connexion-container span").click(function () {
+		$('body').css('overflow-y', 'hidden')
+		$('#login').removeClass('login-close')
+	})
+	$('#login form').click(function (e) {
+		e.stopPropagation();
+	})
+	$("#login").click(function () {
+		$('body').css('overflow-y', 'visible')
+		$("#login").addClass('login-close')
+	})
+</script>
+
+<footer>
+	<div class="footer-banner">
+		<div class="logo-contain">
+			<img src="img/logos/logo-footer.png" alt="">
+		</div>
+	</div>
+	<div class="footer-body">
+		<div class="social-container">
+			<ul class="social-list">
+				<li>
+					<a href="https://discord.gg/hNHpWrq" target="_blank">
+						<img src="img/social/discord.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/averylOff" target="_blank">
+						<img src="img/social/twitter.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UC22R9d7yRIuQh2a-3do8IRA?" target="_blank">
+						<img src="img/social/youtube.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="center-footer"style='text-align:center'>
+			<div class="partner-slider">
+				<br>
+				<ul id="partner-list">
+					<li style='text-align:center;width: 200px;' class="partner">
+						<a href="/">
+							<img src="../img/logos/logo.png" style="width:100px" alt="Logo d'un partenaire"/><br />
+							<strong>Partenaire</strong><br />
+							Exemple
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="link-container">
+			<h6 class="mobil-name-part">LIENS UTILES</h6>
+			<ul>
+				<li>
+					<a href="cgu.html">CGU</a>
+				</li>
+				<li>
+					<a href="legal.html">Mentions légales</a>
+				</li>
+				<li >
+					<a href="rgpd.html">Politique de confidentialité</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-footer">
+		<div  class="rights-container">
+        	<h6 class="mobil-name-part">CRÉDITS</h6>
+			Développé par : Axel G. / Samuel R. / Louis S. | Copyright Averyl 2019
+		</div>
+	</div>
+	
+</footer>
+
+</body>
+
+<script>
+	function replaceFooter() {
+		if (location.pathname == "/" || location.pathname == "/support/") {
+			$('footer').css('width','100%')
+		}else{	
+			footerpos = $('body').height() - ($('footer').height()+25);
+			$('footer').css('width','100%')
+			$('footer').css('position','absolute')
+			$('footer').css('top',footerpos)
+		}
+	}
+	replaceFooter()
+	$('#ticketSelectCategorie').change(function () {
+		if (location.pathname == "/" || location.pathname == "/support/") {
+			$('footer').css('position','static')
+			$('footer').css('width','100%')
+		}
+	})
+	$(window).resize(function(){
+		$('footer').css('position','static')
+		replaceFooter()
+	})
+</script>
+</html>

@@ -4,16 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Averyl est un projet minecraft Semi-RP en 1.12.2 unique en son genre. Rejoignez nous !"/>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="description"
+		content="Averyl est un projet minecraft Semi-RP en 1.12.2 unique en son genre. Rejoignez nous !" />
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<title>Averyl - Staff</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/staff.css"/>
-	<link rel="stylesheet" href="css/menuMobile.css"/>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/staff.css" />
+	<link rel="stylesheet" href="css/menuMobile.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 </head>
@@ -27,11 +28,11 @@
 				</div>
 			</div>
 			<div class="containt-menu-icon">
-				<button style="outline: none;"class="hamburger hamburger--collapse" type="button">
+				<button style="outline: none;" class="hamburger hamburger--collapse" type="button">
 					<span class="hamburger-box ">
 						<span class="hamburger-inner"></span>
 					</span>
-				</button>  
+				</button>
 			</div>
 		</div>
 		<div class="menu-contain">
@@ -40,14 +41,14 @@
 					<ul>
 						<li class="fisrt-Child jolie-back accueil">
 							<span>
-								<a href="/">ACCUEIL</a>
+								<a href="index.html">ACCUEIL</a>
 							</span>
 						</li>
 						<li class="fisrt-Child">
 							<span>
 								<a href="https://averyl.tebex.io/">BOUTIQUE</a>
 							</span>
-						</li >
+						</li>
 						<li class="fisrt-Child reglement dynmap">
 							<span>SEMI-RP</span>
 							<ul>
@@ -76,7 +77,7 @@
 			</aside>
 		</div>
 	</header>
-	
+
 	<header class="desktop">
 		<div class="nav-container">
 			<div class="logo-container">
@@ -85,18 +86,18 @@
 			<nav>
 				<ul>
 					<li class="accueil">
-						<a href="/">ACCUEIL</a>
+						<a href="index.html">ACCUEIL</a>
 					</li>
 					<li class="first-Li">
 						<div class="name">
-							<a href="/">BOUTIQUE</a>
+							<a href="index.html">BOUTIQUE</a>
 						</div>
 					</li>
 					<li class="first-Li reglement dynmap">
 						<div class="name">SEMI-RP</div>
 						<div class="options">
 							<ul>
-								<li >
+								<li>
 									<a href="rules.html">Règlement</a>
 								</li>
 							</ul>
@@ -110,11 +111,11 @@
 					</li>
 				</ul>
 				<script>
-					var path = location.pathname.replace(/\//gi,'')
+					var path = location.pathname.replace(/\//gi, '')
 					if (path == "") {
 						path = "accueil"
 					}
-					$('.'+path).addClass('active-link');
+					$('.' + path).addClass('active-link');
 				</script>
 			</nav>
 		</div>
@@ -122,219 +123,230 @@
 			<span>CONNEXION/INSCRIPTION</span>
 		</div>
 	</header>
-	
+
 	<script>
-		$('.hamburger').click(function(){
+		$('.hamburger').click(function () {
 			$(this).toggleClass('is-active')
 			$('.menu-contain').toggleClass("open-menuMobile")
 			if ($(this).css('position') == "static" || $(this).css('position') == "relative") {
-				$(this).css('position',"fixed")
-				$(this).css('top','25px')
-				$(this).css('left','0')
-				$('body').css("overflow",'hidden')
+				$(this).css('position', "fixed")
+				$(this).css('top', '25px')
+				$(this).css('left', '0')
+				$('body').css("overflow", 'hidden')
 			} else {
-				$(this).css('position',"relative")
-				$(this).css('top','0')		
-				$('body').css("overflow",'visible')	
+				$(this).css('position', "relative")
+				$(this).css('top', '0')
+				$('body').css("overflow", 'visible')
 			}
 		})
-		$('.first-Li').mouseenter(function(){
+		$('.first-Li').mouseenter(function () {
 			$('.options').css('visibility', 'hidden')
-				$(this).children('.options').css('visibility', 'visible')
+			$(this).children('.options').css('visibility', 'visible')
 		})
-		$('.options').mouseleave(function(){
+		$('.options').mouseleave(function () {
 			$('.options').css('visibility', 'hidden')
 		})
-		$('.options').mouseleave(function(){
+		$('.options').mouseleave(function () {
 			$('.options').css('visibility', 'hidden')
 		})
 	</script>
 
-<div class="staff-members-container">
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#ee4444;" class="role">Admin</p>
-			<p class="username">Louwh</p>
+	<div class="staff-members-container">
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#ee4444;" class="role">Admin</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#ee4444;" class="role">Admin</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#ee4444;" class="role">Admin</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#ffff00;" class="role">Rédacteur</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#1f99a3;" class="role">Resp. Modération</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#ff84ff;" class="role">Développeur</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#ffff00;" class="role">Rédacteur</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#1f99a3;" class="role">Resp. Modération</p>
+				<p class="username">Louwh</p>
+			</div>
+		</div>
+		<div class="profil-containt">
+			<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')" class="staff-container">
+			</div>
+			<div class="staff-info">
+				<p style="background:#ff84ff;" class="role">Développeur</p>
+				<p class="username">Louwh</p>
+			</div>
 		</div>
 	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#ee4444;" class="role">Admin</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#ee4444;" class="role">Admin</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#ffff00;" class="role">Rédacteur</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#1f99a3;" class="role">Resp. Modération</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#ff84ff;" class="role">Développeur</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#ffff00;" class="role">Rédacteur</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#1f99a3;" class="role">Resp. Modération</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-	<div class="profil-containt">
-		<div style="background-image: url('https://minotar.net/armor/bust/Louwh/200.png')"class="staff-container"></div>
-		<div class="staff-info">
-			<p style="background:#ff84ff;" class="role">Développeur</p>
-			<p class="username">Louwh</p>
-		</div>
-	</div>
-</div>
 
-  <div id="login" class="login-close">
-    <form>
-      <h3>Connexion</h3>
-      <div>
-        <input class="uk-input" type="text" placeholder="Nom d'utilisateur" name="login" maxlength="100" required>
-      </div>
-      <div>
-        <input class="uk-input" type="password" placeholder="Mot de passe" name="pass" maxlength="100" required>
-      </div>
-      <div class="buttonlist">
-        <button type="submit" name="NavConnexion" class="uk-button uk-button-primary">Se connecter</button>
-        <a class="uk-button uk-button-default" href="/">S'enregistrer</a>
-        <a class="uk-button uk-button-default" href="forgot.html">Mot de passe oublié</a>
-      </div>
-    </form>
-  </div>
-
-<script>
-	$(".connexion-container span").click(function () {
-		$('body').css('overflow-y', 'hidden')
-		$('#login').removeClass('login-close')
-	})
-	$('#login form').click(function (e) {
-		e.stopPropagation();
-	})
-	$("#login").click(function () {
-		$('body').css('overflow-y', 'visible')
-		$("#login").addClass('login-close')
-	})
-</script>
-
-<footer>
-	<div class="footer-banner">
-		<div class="logo-contain">
-			<img src="img/logos/logo-footer.png" alt="">
-		</div>
+	<div id="login" class="login-close">
+		<form>
+			<h3>Connexion</h3>
+			<div>
+				<input class="uk-input" type="text" placeholder="Nom d'utilisateur" name="login" maxlength="100"
+					required>
+			</div>
+			<div>
+				<input class="uk-input" type="password" placeholder="Mot de passe" name="pass" maxlength="100" required>
+			</div>
+			<div class="buttonlist">
+				<button type="submit" name="NavConnexion" class="uk-button uk-button-primary">Se connecter</button>
+				<a class="uk-button uk-button-default" href="index.html">S'enregistrer</a>
+				<a class="uk-button uk-button-default" href="forgot.html">Mot de passe oublié</a>
+			</div>
+		</form>
 	</div>
-	<div class="footer-body">
-		<div class="social-container">
-			<ul class="social-list">
-				<li>
-					<a href="https://discord.gg/hNHpWrq" target="_blank">
-						<img src="img/social/discord.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/averylOff" target="_blank">
-						<img src="img/social/twitter.png" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="https://www.youtube.com/channel/UC22R9d7yRIuQh2a-3do8IRA?" target="_blank">
-						<img src="img/social/youtube.png" alt="">
-					</a>
-				</li>
-			</ul>
+
+	<script>
+		$(".connexion-container span").click(function () {
+			$('body').css('overflow-y', 'hidden')
+			$('#login').removeClass('login-close')
+		})
+		$('#login form').click(function (e) {
+			e.stopPropagation();
+		})
+		$("#login").click(function () {
+			$('body').css('overflow-y', 'visible')
+			$("#login").addClass('login-close')
+		})
+	</script>
+
+	<footer>
+		<div class="footer-banner">
+			<div class="logo-contain">
+				<img src="img/logos/logo-footer.png" alt="">
+			</div>
 		</div>
-		<div class="center-footer"style='text-align:center'>
-			<div class="partner-slider">
-				<br>
-				<ul  id="partner-list">
-					<li style='text-align:center;width: 200px;' class="partner">
-						<a href="/">
-							<img src="../img/logos/logo.png" style="width:100px" alt="Logo d'un partenaire"/><br />
-							<strong>Partenaire</strong><br />
-							Exemple
+		<div class="footer-body">
+			<div class="social-container">
+				<ul class="social-list">
+					<li>
+						<a href="https://discord.gg/hNHpWrq" target="_blank">
+							<img src="img/social/discord.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/averylOff" target="_blank">
+							<img src="img/social/twitter.png" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.youtube.com/channel/UC22R9d7yRIuQh2a-3do8IRA?" target="_blank">
+							<img src="img/social/youtube.png" alt="">
 						</a>
 					</li>
 				</ul>
 			</div>
+			<div class="center-footer" style='text-align:center'>
+				<div class="partner-slider">
+					<br>
+					<ul id="partner-list">
+						<li style='text-align:center;width: 200px;' class="partner">
+							<a href="index.html">
+								<img src="img/logos/logo.png" style="width:100px" alt="Logo d'un partenaire" /><br />
+								<strong>Partenaire</strong><br />
+								Exemple
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="link-container">
+				<h6 class="mobil-name-part">LIENS UTILES</h6>
+				<ul>
+					<li>
+						<a href="cgu.html">CGU</a>
+					</li>
+					<li>
+						<a href="legal.html">Mentions légales</a>
+					</li>
+					<li>
+						<a href="rgpd.html">Politique de confidentialité</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		
-		<div class="link-container">
-			<h6 class="mobil-name-part">LIENS UTILES</h6>
-			<ul>
-				<li>
-					<a href="cgu.html">CGU</a>
-				</li>
-				<li>
-					<a href="legal.html">Mentions légales</a>
-				</li>
-				<li >
-					<a href="rgpd.html">Politique de confidentialité</a>
-				</li>
-			</ul>
+		<div class="footer-footer">
+			<div class="rights-container">
+				<h6 class="mobil-name-part">CRÉDITS</h6>
+				Développé par : Axel G. / Samuel R. / Louis S. | Copyright Averyl 2019
+			</div>
 		</div>
-	</div>
-	<div class="footer-footer">
-		<div  class="rights-container">
-        	<h6 class="mobil-name-part">CRÉDITS</h6>
-			Développé par : Axel G. / Samuel R. / Louis S. | Copyright Averyl 2019
-		</div>
-	</div>
-	
-</footer>
+
+	</footer>
 
 </body>
 
 <script>
 	function replaceFooter() {
 		if (location.pathname == "/" || location.pathname == "/support/") {
-			$('footer').css('width','100%')
-		}else{	
-			footerpos = $('body').height() - ($('footer').height()+25);
-			$('footer').css('width','100%')
-			$('footer').css('position','absolute')
-			$('footer').css('top',footerpos)
+			$('footer').css('width', '100%')
+		} else {
+			footerpos = $('body').height() - ($('footer').height() + 25);
+			$('footer').css('width', '100%')
+			$('footer').css('position', 'absolute')
+			$('footer').css('top', footerpos)
 		}
 	}
 	replaceFooter()
 	$('#ticketSelectCategorie').change(function () {
 		if (location.pathname == "/" || location.pathname == "/support/") {
-			$('footer').css('position','static')
-			$('footer').css('width','100%')
+			$('footer').css('position', 'static')
+			$('footer').css('width', '100%')
 		}
 	})
-	$(window).resize(function(){
-		$('footer').css('position','static')
+	$(window).resize(function () {
+		$('footer').css('position', 'static')
 		replaceFooter()
 	})
 </script>
+
 </html>

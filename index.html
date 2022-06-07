@@ -10,9 +10,9 @@
   <title>Averyl - Minecraft</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/accueil.css"/>
-  <link rel="stylesheet" href="css/menuMobile.css"/>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/accueil.css" />
+  <link rel="stylesheet" href="css/menuMobile.css" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
@@ -21,109 +21,109 @@
 </head>
 
 <body>
-	<header class="mobile">
-		<div class="contain-flex">
-			<div class="position-mobile">
-				<div class="logo-container">
-					<img src="img/logos/logo.png" alt="">
-				</div>
-			</div>
-			<div class="containt-menu-icon">
-				<button style="outline: none;"class="hamburger hamburger--collapse" type="button">
-					<span class="hamburger-box ">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>  
-			</div>
-		</div>
-		<div class="menu-contain">
-			<aside>
-				<nav>
-					<ul>
-						<li class="fisrt-Child jolie-back accueil">
-							<span>
-								<a href="/">ACCUEIL</a>
-							</span>
-						</li>
-						<li class="fisrt-Child">
-							<span>
-								<a href="https://averyl.tebex.io/">BOUTIQUE</a>
-							</span>
-						</li >
-						<li class="fisrt-Child reglement dynmap">
-							<span>SEMI-RP</span>
-							<ul>
-								<li class="jolie-back">
-									<a href="rules.html">Règlement</a>
-								</li>
-							</ul>
-						</li>
-						<li class="fisrt-Child jolie-back staff">
-							<span>
-								<a href="staff.html">ÉQUIPE</a>
-							</span>
-						</li>
-						<li class="fisrt-Child jolie-back support">
-							<span>
-								<a href="support.html">SUPPORT</a>
-							</span>
-						</li>
-						<li class="fisrt-Child jolie-back">
-							<div class="connexion-container">
-								<span>CONNEXION</span>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</aside>
-		</div>
-	</header>
-	
-	<header class="desktop">
-		<div class="nav-container">
-			<div class="logo-container">
-				<img src="img/logos/logo.png" alt="">
-			</div>
-			<nav>
-				<ul>
-					<li class="accueil">
-						<a href="/">ACCUEIL</a>
-					</li>
-					<li class="first-Li">
-						<div class="name">
-							<a href="/">BOUTIQUE</a>
-						</div>
-					</li>
-					<li class="first-Li reglement dynmap">
-						<div class="name">SEMI-RP</div>
-						<div class="options">
-							<ul>
-								<li >
-									<a href="rules.html">Règlement</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li class="staff">
-						<a href="staff.html">ÉQUIPE</a>
-					</li>
-					<li class="support">
-						<a href="support.html">SUPPORT</a>
-					</li>
-				</ul>
-				<script>
-					var path = location.pathname.replace(/\//gi,'')
-					if (path == "") {
-						path = "accueil"
-					}
-					$('.'+path).addClass('active-link');
-				</script>
-			</nav>
-		</div>
-		<div class="connexion-container">
-			<span>CONNEXION/INSCRIPTION</span>
-		</div>
-	</header>
+  <header class="mobile">
+    <div class="contain-flex">
+      <div class="position-mobile">
+        <div class="logo-container">
+          <img src="img/logos/logo.png" alt="">
+        </div>
+      </div>
+      <div class="containt-menu-icon">
+        <button style="outline: none;" class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box ">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-contain">
+      <aside>
+        <nav>
+          <ul>
+            <li class="fisrt-Child jolie-back accueil">
+              <span>
+                <a href="index.html">ACCUEIL</a>
+              </span>
+            </li>
+            <li class="fisrt-Child">
+              <span>
+                <a href="https://averyl.tebex.io/">BOUTIQUE</a>
+              </span>
+            </li>
+            <li class="fisrt-Child reglement dynmap">
+              <span>SEMI-RP</span>
+              <ul>
+                <li class="jolie-back">
+                  <a href="rules.html">Règlement</a>
+                </li>
+              </ul>
+            </li>
+            <li class="fisrt-Child jolie-back staff">
+              <span>
+                <a href="staff.html">ÉQUIPE</a>
+              </span>
+            </li>
+            <li class="fisrt-Child jolie-back support">
+              <span>
+                <a href="support.html">SUPPORT</a>
+              </span>
+            </li>
+            <li class="fisrt-Child jolie-back">
+              <div class="connexion-container">
+                <span>CONNEXION</span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </header>
+
+  <header class="desktop">
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="img/logos/logo.png" alt="">
+      </div>
+      <nav>
+        <ul>
+          <li class="accueil">
+            <a href="index.html">ACCUEIL</a>
+          </li>
+          <li class="first-Li">
+            <div class="name">
+              <a href="index.html">BOUTIQUE</a>
+            </div>
+          </li>
+          <li class="first-Li reglement dynmap">
+            <div class="name">SEMI-RP</div>
+            <div class="options">
+              <ul>
+                <li>
+                  <a href="rules.html">Règlement</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="staff">
+            <a href="staff.html">ÉQUIPE</a>
+          </li>
+          <li class="support">
+            <a href="support.html">SUPPORT</a>
+          </li>
+        </ul>
+        <script>
+          var path = location.pathname.replace(/\//gi, '')
+          if (path == "") {
+            path = "accueil"
+          }
+          $('.' + path).addClass('active-link');
+        </script>
+      </nav>
+    </div>
+    <div class="connexion-container">
+      <span>CONNEXION/INSCRIPTION</span>
+    </div>
+  </header>
 
   <script>
     $('.hamburger').click(function () {
@@ -279,7 +279,8 @@
           </div>
           <div class="article-body">
             <div class="description">
-              <p>Lorem ipsum sigubdi dfisqugb qdifughb sdifughb sdifughsdifu hgi sdufhg sdifug sdfiugh sdfiguh sdfiugh sdf</p>
+              <p>Lorem ipsum sigubdi dfisqugb qdifughb sdifughb sdifughsdifu hgi sdufhg sdifug sdfiugh sdfiguh sdfiugh
+                sdf</p>
             </div>
             <div class="article-Info">
               <div class="commentaire">
@@ -301,7 +302,8 @@
           </div>
           <div class="article-body">
             <div class="description">
-              <p>Lorem ipsum sigubdi dfisqugb qdifughb sdifughb sdifughsdifu hgi sdufhg sdifug sdfiugh sdfiguh sdfiugh sdf</p>
+              <p>Lorem ipsum sigubdi dfisqugb qdifughb sdifughb sdifughsdifu hgi sdufhg sdifug sdfiugh sdfiguh sdfiugh
+                sdf</p>
             </div>
             <div class="article-Info">
               <div class="commentaire">
@@ -323,7 +325,8 @@
           </div>
           <div class="article-body">
             <div class="description">
-              <p>Lorem ipsum sigubdi dfisqugb qdifughb sdifughb sdifughsdifu hgi sdufhg sdifug sdfiugh sdfiguh sdfiugh sdf</p>
+              <p>Lorem ipsum sigubdi dfisqugb qdifughb sdifughb sdifughsdifu hgi sdufhg sdifug sdfiugh sdfiguh sdfiugh
+                sdf</p>
             </div>
             <div class="article-Info">
               <div class="commentaire">
@@ -362,7 +365,7 @@
       </div>
       <div class="buttonlist">
         <button type="submit" name="NavConnexion" class="uk-button uk-button-primary">Se connecter</button>
-        <a class="uk-button uk-button-default" href="/">S'enregistrer</a>
+        <a class="uk-button uk-button-default" href="index.html">S'enregistrer</a>
         <a class="uk-button uk-button-default" href="forgot.html">Mot de passe oublié</a>
       </div>
     </form>
@@ -413,8 +416,8 @@
           <br>
           <ul id="partner-list">
             <li style='text-align:center;width: 200px;' class="partner">
-              <a href="/">
-                <img src="../img/logos/logo.png" style="width:100px" alt="Logo d'un partenaire"/><br />
+              <a href="index.html">
+                <img src="img/logos/logo.png" style="width:100px" alt="Logo d'un partenaire" /><br />
                 <strong>Partenaire</strong><br />
                 Exemple
               </a>
@@ -432,7 +435,7 @@
           <li>
             <a href="legal.html">Mentions légales</a>
           </li>
-          <li >
+          <li>
             <a href="rgpd.html">Politique de confidentialité</a>
           </li>
         </ul>
